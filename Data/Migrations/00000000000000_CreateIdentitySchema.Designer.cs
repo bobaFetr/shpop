@@ -5,13 +5,30 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+// Add the correct namespace for ApplicationDbContext if it's different
+// using YourNamespaceWhereApplicationDbContextIsDefined;
 
-namespace shpop.Data.Migrations
+///namespace shpop.Data.Migrations
+namespace shpop.Models
 {
+    
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
-    partial class CreateIdentitySchema
+    partial class CreateIdentitySchema : Migration
     {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            // This method is required by Migration base class.
+            // Since this is a designer file, the actual migration logic is in the main migration file.
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            // This method is required by Migration base class.
+            // Since this is a designer file, the actual migration logic is in the main migration file.
+        }
+
+        // protected override void BuildTargetModel(ModelBuilder modelBuilder)
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618

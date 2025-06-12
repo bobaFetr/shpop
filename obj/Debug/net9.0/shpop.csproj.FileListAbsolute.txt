@@ -1,0 +1,10 @@
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Desktop\shpop\obj\Debug\net9.0\shpop.sourcelink.json
