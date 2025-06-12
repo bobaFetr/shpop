@@ -1,0 +1,39 @@
+@model shpop.Models.Product
+
+@{
+    ViewBag.Title = "Добави продукт";
+}
+
+<h2>Добави продукт</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Price)
+        @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ImageUrl)
+        @Html.TextBoxFor(m => m.ImageUrl, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.CategoryId, "Категория")
+        @Html.DropDownList("CategoryId", null, "-- Избери категория --", new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-success">Създай</button>
+}

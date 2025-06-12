@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+namespace shpop.Models;
+
 public class ApplicationDbContext : DbContext
 {
     public DbSet<Product> Products { get; set; }

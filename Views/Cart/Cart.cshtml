@@ -1,0 +1,44 @@
+@model IEnumerable<shpop.Models.OrderItem>
+
+@{
+    ViewBag.Title = "Количка";
+    decimal total = 0;
+}
+
+<h2>Твоята количка</h2>
+
+@if (!Model.Any())
+{
+    <p>Количката е празна.</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Продукт</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Общо</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            var subtotal = item.Product.Price * item.Quantity;
+            total += subtotal;
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.Product.Price лв.</td>
+                <td>@subtotal лв.</td>
+                <td>
+                    <a href="@Url.Action("RemoveFromCart", "Cart", new { id = item.ProductId })">Премахни</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <h4>Обща сума: @total лв.</h4>
+
+    <form method="post" action="@Url.Action("Checkout", "Cart")">
+        <button type="submit" class="btn btn-primary">Поръчай</button>
+    </form>
+}

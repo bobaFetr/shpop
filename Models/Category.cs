@@ -1,3 +1,5 @@
+namespace shpop.Models;
+
 public class Category
 {
     public int Id { get; set; }

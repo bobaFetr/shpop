@@ -1,0 +1,18 @@
+@model IEnumerable<shpop.Models.Product>
+
+@{
+    ViewBag.Title = "Продукти";
+}
+
+<h2>Продукти</h2>
+
+@foreach (var product in Model)
+{
+    <div class="product-card">
+        <h3>@product.Name</h3>
+        <img src="@product.ImageUrl" alt="@product.Name" style="max-height: 200px;" />
+        <p>@product.Description</p>
+        <p><strong>Цена:</strong> @product.Price лв.</p>
+        <a href="@Url.Action("Details", "Products", new { id = product.Id })">Виж повече</a>
+    </div>
+}
