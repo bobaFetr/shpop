@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shpop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f20be5510c68ccd29e40f1c4335cf52d3ca46d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c73938aa80a341c9d8471595709081d11a133827")]
 [assembly: System.Reflection.AssemblyProductAttribute("shpop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shpop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
