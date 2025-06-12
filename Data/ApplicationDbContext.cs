@@ -10,7 +10,7 @@ namespace shpop.Models;
 
 public class ApplicationDbContext : DbContext
 {
-        public DbSet<Product> Products { get; set; }
+    public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Order> Orders { get; set; }
@@ -19,4 +19,12 @@ public class ApplicationDbContext : DbContext
         : base(options)
     {
     }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Product>()
+        .Property(p => p.Price)
+        .HasColumnType("decimal(18,2)"); // Adjust precision/scale as needed
+}
+
 }
